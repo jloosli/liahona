@@ -161,7 +161,9 @@ function liahona_callout($args = array(), $content = NULL)
     extract(shortcode_atts(array(
         'align' => 'left'
     ), $args));
-    $style = "text-align: $align;";
+	/** @var $align string */
+
+	$style = "text-align: $align;";
     return "<div class='callout' style='$style'>" . do_shortcode($content) . "</div>";
 }
 
@@ -175,7 +177,8 @@ function date_func($atts)
         'dateFormat' => 'F j, Y'
     ), $atts));
     $thetime = time();
-    $date = date($dateFormat, $thetime);
+	/** @var $dateFormat string */
+	$date = date($dateFormat, $thetime);
     $script = <<<HTML
     <noscript>$date</noscript>
 <script type="text/javascript">
