@@ -30,7 +30,7 @@
 	        <h2 class="highlight">Personal Essays</h2>
             <?php wp_reset_query(); $hide_pagination=true; query_posts(array(
                 'category__in'=>array(6),  // Exclude Announcements (5) & News (7)
-                'posts_per_page'=>9,
+                'posts_per_page'=>10,
                 'paged' => get_query_var('paged') // Make pagination work http://scribu.net/wordpress/wp-pagenavi/right-way-to-use-query_posts.html
         ));  ?>
           <?php roots_loop_before(); ?>
