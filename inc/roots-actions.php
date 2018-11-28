@@ -197,7 +197,7 @@ function roots_get_stylesheets() {
 
 function stylesheet_link_tag($file, $tabs = 0, $newline = true) {
   $indent = str_repeat("\t", $tabs);
-  return $indent . '<link rel="stylesheet" href="' . get_template_directory_uri() . '/css' . $file . '">' . ($newline ? "\n" : "");
+  return $indent . '<link rel="stylesheet" href="' . get_template_directory_uri() . '/css' . $file . '?v='.LIAHONA_VERSION.'">' . ($newline ? "\n" : "");
 }
 
 function stylesheet_link_tag_boostrap_less($file, $tabs = 0, $newline = true) {

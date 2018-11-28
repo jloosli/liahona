@@ -4,6 +4,8 @@ if ( ! defined( '__DIR__' ) ) {
 	define( '__DIR__', dirname( __FILE__ ) );
 }
 
+define('LIAHONA_VERSION', '1.1.0');
+
 require_once locate_template( '/inc/roots-activation.php' ); // activation
 require_once locate_template( '/inc/roots-options.php' ); // theme options
 require_once locate_template( '/inc/roots-cleanup.php' ); // cleanup
