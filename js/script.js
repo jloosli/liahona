@@ -9,7 +9,6 @@ if (/liahona\.loc/.test(window.location.hostname)) {
         let newsrc = 'https://theliahonaproject.net' + src;
         $(this).attr('src', newsrc);
       }
-
     });
   })
 }
