@@ -15,7 +15,7 @@
               <?php get_template_part('loop','full'); ?>
               <?php roots_loop_after(); ?>
           </div>
-        <hr/>
+        <!--        <hr/>-->
         <div class="container" id="articles">
           <h2 class="highlight">General Interest</h2>
             <?php wp_reset_query(); $hide_pagination=true; query_posts(array(
