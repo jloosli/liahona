@@ -15,8 +15,9 @@
               <?php get_template_part('loop','full'); ?>
               <?php roots_loop_after(); ?>
           </div>
-          <hr />
+        <hr/>
         <div class="container" id="articles">
+          <h2 class="highlight">General Interest</h2>
             <?php wp_reset_query(); $hide_pagination=true; query_posts(array(
                 'category__in'=>array(15),  // Exclude Announcements (5) & News (7)
                 'posts_per_page'=>3,
@@ -36,10 +37,12 @@
           <?php roots_loop_before(); ?>
           <?php get_template_part('loop'); ?>
           <?php roots_loop_after();  ?>
+
+          <a class="button" href="/category/essays/page/2/" style="margin-bottom: 1rem;">Read more essays</a>
         </div>
-<!--          <div class="container" id="news">-->
-<!--              <h2 class="highlight">In the News</h2>-->
-<!--              --><?php //wp_reset_query(); $hide_pagination=true; query_posts('category_name=news&posts_per_page=3'); ?>
+        <!--          <div class="container" id="news">-->
+        <!--              <h2 class="highlight">In the News</h2>-->
+        <!--              --><?php //wp_reset_query(); $hide_pagination=true; query_posts('category_name=news&posts_per_page=3'); ?>
 <!--              --><?php //roots_loop_before(); ?>
 <!--              --><?php //get_template_part('loop'); ?>
 <!--              --><?php //roots_loop_after(); ?>
