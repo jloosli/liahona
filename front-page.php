@@ -19,8 +19,8 @@
     </div>
     <!--        <hr/>-->
     <div class="container" id="articles">
-      <h2 class="highlight">General Interest</h2>
-        <?php wp_reset_query();
+      <h2 class="highlight">General Interest Articles</h2>
+	    <?php wp_reset_query();
         $hide_pagination = true;
         query_posts([
             'category__in'   => [15],  // Exclude Announcements (5) & News (7)
@@ -46,7 +46,7 @@
 
       <div id="post-nav">
         <a class="button" href="/category/essays/page/2/" style="margin-bottom: 1rem;">Read more
-          essays</a>
+          Personal Essays</a>
       </div>
     </div>
     <!--          <div class="container" id="news">-->

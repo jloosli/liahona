@@ -567,7 +567,7 @@ article {
     text-align: center;
 }
 
-#sidebar {
+#sidebar, .sidebar {
     background: #568096;
     /* IE10 */
     background-image: -ms-linear-gradient(right, #aec2cc 0%, #568096 100%);
@@ -579,7 +579,7 @@ article {
     background-image: -o-linear-gradient(right, #aec2cc 0%, #568096 100%);
 
     /* Webkit (Safari/Chrome 10) */
-    background-image: -webkit-gradient(linear, right top, left top, color-stop(0, D6E0E5), color-stop(1, #568096));
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #D6E0E5), color-stop(1, #568096));
 
     /* Webkit (Chrome 11+) */
     background-image: -webkit-linear-gradient(right, #aec2cc 0%, #568096 100%);
